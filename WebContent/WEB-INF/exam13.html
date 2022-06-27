@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button id = 'btn' type = 'button'>영사기</button>
+		<h3 id="display">아니?</h3>
+	</div>
+
+</body>
+
+<script type = 'text/javascript'>
+
+if($('#display').val() != '꺼허허허허헣'){
+	$('#btn').on('click', function(){
+		alert('폭★파');
+		$('#display').html('<font color = red>꺼허허허허헣</font>')
+	});
+}else{
+	$('#btn').on('mouseleave', function(){
+		alert('어딜도망가');
+	});
+}
+
+$('#display').on('click', function(){
+	$('#display').html('동무는 당을 배신했소')
+});
+
+
+
+</script>
+
+
+</html>
