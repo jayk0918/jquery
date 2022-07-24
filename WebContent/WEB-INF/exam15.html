@@ -28,7 +28,7 @@ $('#btn').on('click', function(){
 
 // 부모(ul) => 자식(li) 위임
 $('ul').on('click', 'li', function(){
-	var $this = $(this);
+	$this = $(this);
 	var str = $this.text();
 	console.log(str);
 })
